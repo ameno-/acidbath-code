@@ -1,0 +1,51 @@
+# Drop Zone Configuration
+# Each zone watches a directory and triggers an agent on file events
+
+output_dir: ~/output
+archive_dir: ~/archive
+log_dir: ~/logs
+
+zones:
+  transcribe:
+    directory: ~/drops/transcribe
+    patterns: ["*.mp3", "*.wav", "*.m4a", "*.webm"]
+    agent: whisper_transcribe
+    events: [created]
+
+  analyze:
+    directory: ~/drops/analyze
+    patterns: ["*.txt", "*.md", "*.pdf"]
+    agent: claude_analyze
+    events: [created]
+
+  images:
+    directory: ~/drops/images
+    patterns: ["*.txt"]  # Text file contains image prompts
+    agent: replicate_generate
+    events: [created]
+
+  data:
+    directory: ~/drops/data
+    patterns: ["*.csv", "*.json"]
+    agent: claude_data_analysis
+    events: [created]
+
+agents:
+  whisper_transcribe:
+    type: bash
+    command: |
+      whisper "{file}" --output_dir "{output_dir}" --output_format txt
+
+  claude_analyze:
+    type: claude
+    prompt_file: prompts/analyze.md
+    model: claude-3-5-sonnet-20241022
+
+  replicate_generate:
+    type: python
+    script: agents/image_gen.py
+
+  claude_data_analysis:
+    type: claude
+    prompt_file: prompts/data_analysis.md
+    model: claude-3-5-sonnet-20241022

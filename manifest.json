@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "generated": "2025-12-23T15:07:51.001173",
+  "posts": {
+    "agent-architecture": {
+      "title": "Agent Architecture: From Custom Agents to Effective Delegation",
+      "path": "src/content/blog/agent-architecture.md",
+      "total_blocks": 0,
+      "extracted_examples": [
+        {
+          "name": "poc-simplest-custom",
+          "category": "agentic-patterns",
+          "path": "examples/agentic-patterns/agent-architecture/poc-simplest-custom",
+          "language": "python",
+          "lines": 41,
+          "section": "## POC 1: The Simplest Custom Agent"
+        },
+        {
+          "name": "poc-agent-custom",
+          "category": "agentic-patterns",
+          "path": "examples/agentic-patterns/agent-architecture/poc-agent-custom",
+          "language": "python",
+          "lines": 132,
+          "section": "## POC 2: Agent with Custom Tools"
+        },
+        {
+          "name": "step-research-agent",
+          "category": "agentic-patterns",
+          "path": "examples/agentic-patterns/agent-architecture/step-research-agent",
+          "language": "markdown",
+          "lines": 49,
+          "section": "### Step 2: Research Agent Definition"
+        }
+      ]
+    },
+    "context-engineering": {
+      "title": "Context Engineering: From Token Optimization to Large Codebase Mastery",
+      "path": "src/content/blog/context-engineering.md",
+      "total_blocks": 0,
+      "extracted_examples": [
+        {
+          "name": "when-you-need",
+          "category": "agentic-patterns",
+          "path": "examples/agentic-patterns/context-engineering/when-you-need",
+          "language": "python",
+          "lines": 70,
+          "section": "## When you need a tool:"
+        }
+      ]
+    },
+    "directory-watchers": {
+      "title": "Directory Watchers: File-Based AI Automation That Scales",
+      "path": "src/content/blog/directory-watchers.md",
+      "total_blocks": 0,
+      "extracted_examples": [
+        {
+          "name": "step-configuration-file",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/directory-watchers/step-configuration-file",
+          "language": "yaml",
+          "lines": 51,
+          "section": "### Step 1: Configuration File"
+        },
+        {
+          "name": "step-core-watcher",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/directory-watchers/step-core-watcher",
+          "language": "python",
+          "lines": 218,
+          "section": "### Step 2: The Core Watcher"
+        },
+        {
+          "name": "step-image-generation",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/directory-watchers/step-image-generation",
+          "language": "python",
+          "lines": 76,
+          "section": "### Step 4: Image Generation Agent"
+        },
+        {
+          "name": "security-validating-file",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/directory-watchers/security-validating-file",
+          "language": "unknown",
+          "lines": 42,
+          "section": "### Security: Validating File Contents"
+        }
+      ]
+    },
+    "document-generation-skills": {
+      "title": "AI Document Skills: Automated File Generation That Actually Ships",
+      "path": "src/content/blog/document-generation-skills.md",
+      "total_blocks": 0,
+      "extracted_examples": [
+        {
+          "name": "step-setup-configuration",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/document-generation-skills/step-setup-configuration",
+          "language": "python",
+          "lines": 73,
+          "section": "### Step 1: Setup and Configuration"
+        },
+        {
+          "name": "step-powerpoint-generation",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/document-generation-skills/step-powerpoint-generation",
+          "language": "python",
+          "lines": 43,
+          "section": "### Step 3: PowerPoint Generation Function"
+        },
+        {
+          "name": "step-pdf-generation",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/document-generation-skills/step-pdf-generation",
+          "language": "python",
+          "lines": 41,
+          "section": "### Step 4: PDF Generation Function"
+        },
+        {
+          "name": "step-pipeline-orchestration",
+          "category": "production-patterns",
+          "path": "examples/production-patterns/document-generation-skills/step-pipeline-orchestration",
+          "language": "python",
+          "lines": 58,
+          "section": "### Step 5: Pipeline Orchestration"
+        }
+      ]
+    },
+    "single-file-scripts": {
+      "title": "Single-File Scripts: When One File Beats an Entire MCP Server",
+      "path": "src/content/blog/single-file-scripts.md",
+      "total_blocks": 0,
+      "extracted_examples": [
+        {
+          "name": "complete-working-example",
+          "category": "workflow-tools",
+          "path": "examples/workflow-tools/single-file-scripts/complete-working-example",
+          "language": "typescript",
+          "lines": 59,
+          "section": "## Complete Working Example: Database Agent"
+        }
+      ]
+    },
+    "workflow-prompts": {
+      "title": "Workflow Prompts: The Pattern That Makes AI Engineering Predictable",
+      "path": "src/content/blog/workflow-prompts.md",
+      "total_blocks": 0,
+      "extracted_examples": [
+        {
+          "name": "poc-working-workflow",
+          "category": "workflow-tools",
+          "path": "examples/workflow-tools/workflow-prompts/poc-working-workflow",
+          "language": "markdown",
+          "lines": 59,
+          "section": "## POC: A Working Workflow Prompt"
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "total_posts": 6,
+    "total_examples_extracted": 14,
+    "by_category": {
+      "agentic-patterns": 4,
+      "production-patterns": 8,
+      "workflow-tools": 2
+    },
+    "by_language": {
+      "python": 9,
+      "markdown": 2,
+      "yaml": 1,
+      "unknown": 1,
+      "typescript": 1
+    }
+  }
+}

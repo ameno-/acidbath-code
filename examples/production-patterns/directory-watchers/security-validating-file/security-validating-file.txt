@@ -1,0 +1,42 @@
+Never execute code from dropped files directly. Treat all input as untrusted. Validate, sanitize, then process.
+
+## The Automation Decision Framework
+
+Not every task deserves automation. Use specific thresholds.
+
+| Frequency | ROI Threshold | Action |
+|-----------|---------------|--------|
+| Once | N/A | Use chat |
+| 2-5x/month | > 5 min saved | Maybe automate |
+| Weekly | > 2 min saved | Consider zone |
+| Daily | > 30 sec saved | Build zone |
+| 10+ times/day | Any time saved | Definitely zone |
+
+| Complexity | Time to Build | Approach |
+|------------|---------------|----------|
+| Single step | 5 minutes | Bash agent |
+| Multi-step | 30 minutes | Python agent |
+| AI reasoning | 15 minutes | Claude agent |
+| Mixed flow | 1-2 hours | Chain agents |
+| Needs approval | 2-3 hours | Approval workflow |
+
+| Risk Level | Requirements | Safety |
+|------------|--------------|--------|
+| Low | None | Full auto |
+| Medium | Logging | Auto + audit |
+| High | Review | Approval required |
+| Critical | Sign-off | Manual only |
+
+**Real numbers from our deployment:**
+- Morning meeting transcription: 10x/week, saves 15 min/day, ROI: 2.5 hours/week
+- Code review: 30x/week, saves 3 min each, ROI: 1.5 hours/week
+- Data analysis: 5x/week, saves 20 min each, ROI: 1.7 hours/week
+- Legal contract review: 2x/month, approval required, ROI: 40 min/month
+
+Total time saved: 22 hours/month. Setup time: 8 hours. Break-even in 2 weeks.
+
+## Agent Opportunity: Build Your Drop Zone Library
+
+Start with these high-value zones:
+
+### Morning Debrief Zone
