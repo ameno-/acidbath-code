@@ -1,0 +1,88 @@
+name: Validate Code Examples
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Validate Python syntax
+        run: |
+          find examples -name "*.py" -exec python -m py_compile {} \;
+
+  validate-bash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+
+      - name: Validate bash scripts
+        run: |
+          find examples -name "*.sh" -exec shellcheck {} \;
+
+  validate-json-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Validate JSON files
+        run: |
+          for file in $(find examples -name "*.json"); do
+            echo "Validating $file"
+            python -c "import json; json.load(open('$file'))"
+          done
+
+      - name: Validate YAML files
+        run: |
+          for file in $(find examples -name "*.yaml" -o -name "*.yml"); do
+            echo "Validating $file"
+            python -c "import yaml; yaml.safe_load(open('$file'))"
+          done
+
+  validate-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check README files
+        run: |
+          find examples -mindepth 3 -maxdepth 3 -type d | while read dir; do
+            if [ ! -f "$dir/README.md" ]; then
+              echo "❌ Missing README in $dir"
+              exit 1
+            fi
+          done
+
+      - name: Validate manifest
+        run: |
+          if [ -f manifest.json ]; then
+            python -c "import json; json.load(open('manifest.json'))"
+          fi
