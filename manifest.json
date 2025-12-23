@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2025-12-23T15:07:51.001173",
+  "generated": "2025-12-23T15:43:02.682403",
   "posts": {
     "agent-architecture": {
       "title": "Agent Architecture: From Custom Agents to Effective Delegation",
@@ -10,7 +10,7 @@
         {
           "name": "poc-simplest-custom",
           "category": "agentic-patterns",
-          "path": "examples/agentic-patterns/agent-architecture/poc-simplest-custom",
+          "path": "agentic-patterns/agent-architecture/poc-simplest-custom",
           "language": "python",
           "lines": 41,
           "section": "## POC 1: The Simplest Custom Agent"
@@ -18,7 +18,7 @@
         {
           "name": "poc-agent-custom",
           "category": "agentic-patterns",
-          "path": "examples/agentic-patterns/agent-architecture/poc-agent-custom",
+          "path": "agentic-patterns/agent-architecture/poc-agent-custom",
           "language": "python",
           "lines": 132,
           "section": "## POC 2: Agent with Custom Tools"
@@ -26,7 +26,7 @@
         {
           "name": "step-research-agent",
           "category": "agentic-patterns",
-          "path": "examples/agentic-patterns/agent-architecture/step-research-agent",
+          "path": "agentic-patterns/agent-architecture/step-research-agent",
           "language": "markdown",
           "lines": 49,
           "section": "### Step 2: Research Agent Definition"
@@ -41,7 +41,7 @@
         {
           "name": "when-you-need",
           "category": "agentic-patterns",
-          "path": "examples/agentic-patterns/context-engineering/when-you-need",
+          "path": "agentic-patterns/context-engineering/when-you-need",
           "language": "python",
           "lines": 70,
           "section": "## When you need a tool:"
@@ -56,7 +56,7 @@
         {
           "name": "step-configuration-file",
           "category": "production-patterns",
-          "path": "examples/production-patterns/directory-watchers/step-configuration-file",
+          "path": "production-patterns/directory-watchers/step-configuration-file",
           "language": "yaml",
           "lines": 51,
           "section": "### Step 1: Configuration File"
@@ -64,7 +64,7 @@
         {
           "name": "step-core-watcher",
           "category": "production-patterns",
-          "path": "examples/production-patterns/directory-watchers/step-core-watcher",
+          "path": "production-patterns/directory-watchers/step-core-watcher",
           "language": "python",
           "lines": 218,
           "section": "### Step 2: The Core Watcher"
@@ -72,7 +72,7 @@
         {
           "name": "step-image-generation",
           "category": "production-patterns",
-          "path": "examples/production-patterns/directory-watchers/step-image-generation",
+          "path": "production-patterns/directory-watchers/step-image-generation",
           "language": "python",
           "lines": 76,
           "section": "### Step 4: Image Generation Agent"
@@ -80,7 +80,7 @@
         {
           "name": "security-validating-file",
           "category": "production-patterns",
-          "path": "examples/production-patterns/directory-watchers/security-validating-file",
+          "path": "production-patterns/directory-watchers/security-validating-file",
           "language": "unknown",
           "lines": 42,
           "section": "### Security: Validating File Contents"
@@ -95,7 +95,7 @@
         {
           "name": "step-setup-configuration",
           "category": "production-patterns",
-          "path": "examples/production-patterns/document-generation-skills/step-setup-configuration",
+          "path": "production-patterns/document-generation-skills/step-setup-configuration",
           "language": "python",
           "lines": 73,
           "section": "### Step 1: Setup and Configuration"
@@ -103,7 +103,7 @@
         {
           "name": "step-powerpoint-generation",
           "category": "production-patterns",
-          "path": "examples/production-patterns/document-generation-skills/step-powerpoint-generation",
+          "path": "production-patterns/document-generation-skills/step-powerpoint-generation",
           "language": "python",
           "lines": 43,
           "section": "### Step 3: PowerPoint Generation Function"
@@ -111,7 +111,7 @@
         {
           "name": "step-pdf-generation",
           "category": "production-patterns",
-          "path": "examples/production-patterns/document-generation-skills/step-pdf-generation",
+          "path": "production-patterns/document-generation-skills/step-pdf-generation",
           "language": "python",
           "lines": 41,
           "section": "### Step 4: PDF Generation Function"
@@ -119,7 +119,7 @@
         {
           "name": "step-pipeline-orchestration",
           "category": "production-patterns",
-          "path": "examples/production-patterns/document-generation-skills/step-pipeline-orchestration",
+          "path": "production-patterns/document-generation-skills/step-pipeline-orchestration",
           "language": "python",
           "lines": 58,
           "section": "### Step 5: Pipeline Orchestration"
@@ -134,7 +134,7 @@
         {
           "name": "complete-working-example",
           "category": "workflow-tools",
-          "path": "examples/workflow-tools/single-file-scripts/complete-working-example",
+          "path": "workflow-tools/single-file-scripts/complete-working-example",
           "language": "typescript",
           "lines": 59,
           "section": "## Complete Working Example: Database Agent"
@@ -149,7 +149,7 @@
         {
           "name": "poc-working-workflow",
           "category": "workflow-tools",
-          "path": "examples/workflow-tools/workflow-prompts/poc-working-workflow",
+          "path": "workflow-tools/workflow-prompts/poc-working-workflow",
           "language": "markdown",
           "lines": 59,
           "section": "## POC: A Working Workflow Prompt"
