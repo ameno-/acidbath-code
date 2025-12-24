@@ -1,0 +1,27 @@
+{
+  "title": "Q4 2024 Business Review",
+  "date": "January 2025",
+  "executive_summary": "Q4 2024 showed strong performance with 17.9% YoY revenue growth and significant margin expansion.",
+  "summary": {
+    "metrics": {
+      "revenue": 14500000,
+      "revenue_growth_yoy": 17.9,
+      "net_income": 1878750,
+      "operating_margin": 17.9,
+      "customer_count": 850,
+      "churn_rate": 2.8
+    },
+    "trends": [
+      {"quarter": "Q1 2024", "revenue": 12500000, "margin": 15.0},
+      {"quarter": "Q2 2024", "revenue": 13200000, "margin": 15.8},
+      {"quarter": "Q3 2024", "revenue": 13800000, "margin": 16.5},
+      {"quarter": "Q4 2024", "revenue": 14500000, "margin": 17.9}
+    ]
+  },
+  "recommendations": [
+    "Maintain current growth trajectory",
+    "Expand customer success team to reduce churn",
+    "Invest in automation to improve margins",
+    "Consider international expansion in Q2 2025"
+  ]
+}

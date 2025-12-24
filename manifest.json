@@ -93,36 +93,13 @@
       "total_blocks": 0,
       "extracted_examples": [
         {
-          "name": "step-setup-configuration",
+          "name": "document-pipeline",
           "category": "production-patterns",
-          "path": "production-patterns/document-generation-skills/step-setup-configuration",
+          "path": "production-patterns/document-generation-skills/document-pipeline",
           "language": "python",
-          "lines": 73,
-          "section": "### Step 1: Setup and Configuration"
-        },
-        {
-          "name": "step-powerpoint-generation",
-          "category": "production-patterns",
-          "path": "production-patterns/document-generation-skills/step-powerpoint-generation",
-          "language": "python",
-          "lines": 43,
-          "section": "### Step 3: PowerPoint Generation Function"
-        },
-        {
-          "name": "step-pdf-generation",
-          "category": "production-patterns",
-          "path": "production-patterns/document-generation-skills/step-pdf-generation",
-          "language": "python",
-          "lines": 41,
-          "section": "### Step 4: PDF Generation Function"
-        },
-        {
-          "name": "step-pipeline-orchestration",
-          "category": "production-patterns",
-          "path": "production-patterns/document-generation-skills/step-pipeline-orchestration",
-          "language": "python",
-          "lines": 58,
-          "section": "### Step 5: Pipeline Orchestration"
+          "lines": 215,
+          "section": "## POC: Complete Working Implementation",
+          "description": "Complete document generation pipeline with Excel, PowerPoint, and PDF generation using Claude Skills API"
         }
       ]
     },
@@ -159,14 +136,14 @@
   },
   "statistics": {
     "total_posts": 6,
-    "total_examples_extracted": 14,
+    "total_examples_extracted": 11,
     "by_category": {
       "agentic-patterns": 4,
-      "production-patterns": 8,
+      "production-patterns": 5,
       "workflow-tools": 2
     },
     "by_language": {
-      "python": 9,
+      "python": 7,
       "markdown": 2,
       "yaml": 1,
       "unknown": 1,
